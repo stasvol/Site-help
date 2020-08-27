@@ -80,7 +80,7 @@ svg {
     letter-spacing: 2px;
     line-height: 17px;
     color: #ffffff !important;
-    padding-left: 2%;
+    margin-left: 2%;
     /*font-family: "Font Awesome";*/
 }
 
@@ -1096,16 +1096,17 @@ a {
     .prev {
         position: absolute;
         top:220px;
-        left: 0;
+        left: 10px;
+        max-width: 25px ;
 
         /*margin: 225px 0 0 -272px ;*/
     }
     .next  {
         position: absolute;
-        top: -280px;
+        top: -290px;
         left: inherit;
-        right: -20px ;
-
+        right: -10px ;
+        max-width: 25px
 
 
         /*margin: -280px 0 0 -15px;*/
