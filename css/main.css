@@ -102,12 +102,26 @@ svg {
 
 .icon {
 
-    width: 130px;
-    height: 48px;
+   min-width: 130px;
+    height: auto;
+    /*height: 48px;*/
     border-radius: 10px;
     background-color: #1e4a1e;
     border: 1px solid #1e4a1e;
 }
+@media(max-width: 1053px)  {
+    .icon  {
+        min-width:100%;
+        height: auto;
+    }
+}
+@media(max-width: 991px)  {
+    .icon  {
+        min-width: 130px;
+        height: auto;
+    }
+}
+
 
 /*end nav*/
 
@@ -249,6 +263,17 @@ h1 {
         min-width: 45%;
     }
 }
+@media (max-width: 576px) {
+    .block {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 1px;
+        margin-right: 1px;
+    }
+    .box {
+        min-width: 45%;
+    }
+}
 
 /*@media (max-width: 1300px) {*/
 /*    .wrap {*/
@@ -326,8 +351,8 @@ h2 {
     height: auto;
 }
 
-.img_box .img {
-    margin-bottom: 100px;
+.img_box  {
+    padding-bottom: 100px;
 }
 
 .img2 {
@@ -361,6 +386,7 @@ h2 {
     font-weight: bold;
     font-family: "Roboto";
 }
+
 
 /*.container-box  {*/
 /*    width: 1030px;*/
@@ -433,6 +459,12 @@ h2 {
     font-family: "Roboto";
     padding: 5px 0 0 0;
 }
+
+@media(max-width: 997px) {
+   .background_container  .list  {
+        margin: 0;
+    }
+}
 @media (max-width: 576px) {
     .list {
         margin: 0 ;
@@ -466,8 +498,8 @@ h2 {
 
 .image3 {
     background-position: 100% 84%;
-    width: 100%;
-    height: auto;
+    /*width: 100%;*/
+    /*height: auto;*/
     background-image: url("../img/15.png");
     position: relative;
     /*background-color: #cccccc;*/
@@ -484,6 +516,11 @@ h2 {
 
 .image3 h2 {
     margin: 85px 0 120px 0;
+}
+@media (max-width:369px ) {
+    .image3 h2 {
+        font-size: 32px;
+    }
 }
 
 h3 {
@@ -517,7 +554,9 @@ h3 {
 .block_container {
     display: flex;
     justify-content: space-between;
+    /*margin: 0;*/
 }
+
 
 
 .block_1 {
@@ -529,6 +568,7 @@ h3 {
     filter: drop-shadow(0px 2px 2.5px rgba(26, 37, 26, 0.75));
     background-color: #ffffff;
     padding: 0;
+
     /*margin-right: 30px;*/
     margin-bottom: 140px;
 }
@@ -575,11 +615,32 @@ h3 {
     margin-bottom: 140px;
 }
 
+
+@media (max-width: 1027px) {
+    .block_container {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+}
+
+@media (max-width: 996px) {
+    .block_container {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+
+}
+
+
+
 @media (max-width: 991px) {
-  /*.block_container {*/
-  /*  display: flex;*/
-  /*  justify-content: space-between;*/
-  /*}*/
+  .block_container {
+    display: flex;
+    justify-content: space-around;
+  }
     .btn2 {
         /*position: relative;*/
         float: right;
@@ -589,36 +650,60 @@ h3 {
 
   .block_1 {
     position: static;
-    min-width: 48%;
+    min-width: 46%;
+    margin-bottom: 30px;
 
   }
     .block_2 {
         position: static;
-        min-width: 48%;
+        min-width: 46%;
+        margin-bottom: 30px;
 
     }
     .block_3 {
         position: static;
-        min-width: 48%;
+        min-width: 46%;
 
     }
     .block_4 {
         position: static;
-        min-width: 48%;
+        min-width: 46%;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 771px) {
   .block_container {
       display: flex;
-      justify-content:space-between;
+      justify-content:space-around;
   }
+    .block_1 {
+        position: static;
+        min-width: 44%;
+        margin-bottom: 34px;
+
+    }
+    .block_2 {
+        position: static;
+        min-width: 44%;
+        margin-bottom: 34px;
+
+    }
+    .block_3 {
+        position: static;
+        min-width: 44%;
+        margin-bottom: 34px;
+    }
+    .block_4 {
+        position: static;
+        min-width: 44%;
+    }
 }
 
 @media (max-width: 576px)  {
     .block_container {
         display: flex;
-        justify-content:space-between;
+        justify-content:space-around;
+        margin: 0 1px 0 1px;
     }
 
 /* .block_container {*/
