@@ -39,18 +39,29 @@ body {
 }
 
 /*NAV*/
-.box-logo {
-    /*margin-left: 5%;*/
 
-}
 .bg-transparent {
     display: flex;
     justify-content: space-between;
 }
 
 .wrapper {
+    /*display: flex;*/
+    /*justify-content: space-around;*/
     width: 100%;
-    padding-left: 40px;
+}
+
+.box-logo {
+    margin-left: 70px;
+
+}
+
+.nav_text {
+margin-left: 60px;
+}
+
+.box_icon  {
+    margin-right: 70px;
 }
 
 .menu-nav {
@@ -70,7 +81,7 @@ body {
 }
 
 .menu-nav :hover {
-    transform: scale(1.1);
+    transform: rotate(.2deg);
 }
 
 /*.fas fa-shopping-cart */
@@ -109,21 +120,56 @@ svg {
     background-color: #1e4a1e;
     border: 1px solid #1e4a1e;
 }
-@media(max-width: 1053px)  {
-    .icon  {
-        min-width:100%;
-        height: auto;
+@media(max-width: 1126px)  {
+    .wrapper {
+        display: flex;
+        justify-content: space-around;
+        margin: 0;
+    }
+    .nav_text  {
+       margin-left: -10px;
+
+    }
+    .box-logo    {
+        margin-left: 0;
+
+    }
+    .box_icon {
+      margin-right: 0;
+     margin-left: -33px;
     }
 }
+
 @media(max-width: 991px)  {
-    .icon  {
-        min-width: 130px;
-        height: auto;
+    .box_icon  {
+        /*min-width: 130px;*/
+        /*height: auto;*/
+        display: none;
+    }
+    /*.box-logo  {*/
+    /*   position: relative;*/
+    /*    right: 100px;*/
+    /*}*/
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+ .btn7 {
+     margin-left: 400px;
+ }
+}
+@media(max-width: 576px) {
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    .btn7 {
+        margin-left: 85px;
     }
 }
 
 
-/*end nav*/
+    /*end nav*/
 
 /*header*/
 
@@ -179,6 +225,7 @@ h1 {
 
 /*Section-1*/
 
+
 .wrap {
     display: flex;
     flex-direction: row;
@@ -187,7 +234,7 @@ h1 {
 
 .box {
     /*width:270px;*/
-    min-width: 230px;
+    min-width: 235px;
     height: auto;
     text-align: center;
     border: 1px solid silver;
@@ -1049,8 +1096,8 @@ h3 {
 /*}*/
 /*соц.сети*/
 .social_block {
-    width: 36px;
-    height: 36px;
+   min-width: 36px;
+    height: auto;
     border-radius: 5px;
     background-color: #1e4a1e;
     border: 1px solid #1e4a1e;
@@ -1061,6 +1108,10 @@ h3 {
 
 .box-logo2 {
     margin-top: 30px;
+}
+.logo2 {
+    display: flex;
+    justify-content: flex-start;
 }
 
 .text_3 {
