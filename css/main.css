@@ -154,8 +154,9 @@ svg {
         display: flex;
         justify-content: space-between;
     }
- .btn7 {
-     margin-left: 400px;
+   .btn7 {
+     /*margin-left: 400px;*/
+
  }
 }
 @media(max-width: 576px) {
@@ -163,9 +164,9 @@ svg {
         display: flex;
         justify-content: space-between;
     }
-    .btn7 {
-        margin-left: 85px;
-    }
+    /*.btn7 {*/
+    /*    margin-left: 85px;*/
+    /*}*/
 }
 
 
@@ -710,7 +711,7 @@ h3 {
     .block_3 {
         position: static;
         min-width: 46%;
-
+        margin-bottom: 140px;
     }
     .block_4 {
         position: static;
@@ -738,7 +739,7 @@ h3 {
     .block_3 {
         position: static;
         min-width: 44%;
-        margin-bottom: 34px;
+        margin-bottom: 140px;
     }
     .block_4 {
         position: static;
