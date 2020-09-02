@@ -49,6 +49,8 @@ body {
     /*display: flex;*/
     /*justify-content: space-around;*/
     width: 100%;
+    /*filter: drop-shadow(0px 2px 2.5px rgba(26,37,26,0.1));*/
+    /*background-color: #ffffff;*/
 }
 
 .box-logo {
@@ -154,11 +156,12 @@ svg {
         display: flex;
         justify-content: space-between;
     }
-   .btn7 {
-     /*margin-left: 400px;*/
+ /*  .btn7 {*/
+ /*    margin-left: 400px;*/
 
- }
+ /*}*/
 }
+
 @media(max-width: 576px) {
     .wrapper {
         display: flex;
