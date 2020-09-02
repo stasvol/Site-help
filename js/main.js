@@ -26,5 +26,19 @@ function showSlides(n) {
 }
 
 // $("textarea").resizable();
+const btn = document.querySelector('.btn7 > span');
+btn.addEventListener('click', function() {
+    if (btn.className==='navbar-toggler-icon') {
+        btn.innerHTML = 'X';
+        btn.removeAttribute('class');
 
+
+    }
+    else {
+        btn.setAttribute('class', 'navbar-toggler-icon');
+        btn.innerHTML=''
+
+    }
+    // btn.innerHTML = (btn.innerHTML === 'Показать всё') ? btn.innerHTML = 'X' : btn.innerHTML = 'Показать всё';
+});
 
