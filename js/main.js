@@ -31,14 +31,27 @@ btn.addEventListener('click', function() {
     if (btn.className==='navbar-toggler-icon') {
         btn.innerHTML = 'X';
         btn.removeAttribute('class');
-
-
     }
     else {
         btn.setAttribute('class', 'navbar-toggler-icon');
         btn.innerHTML=''
 
     }
-    // btn.innerHTML = (btn.innerHTML === 'Показать всё') ? btn.innerHTML = 'X' : btn.innerHTML = 'Показать всё';
 });
 
+
+// const btn = document.querySelector('.btn > span');
+// btn.addEventListener('click', function() {
+//     btn.innerHTML =
+//         (btn.innerHTML === 'Показать всё') ? btn.innerHTML = 'Скрыть всё' : btn.innerHTML = 'Показать всё';
+// })
+
+// const btn = document.querySelectorAll('.btn > span');
+// for (let i = 0; i < btn.length; i++) {
+//
+//     btn[i].addEventListener('click', function() {
+//         this.innerHTML =
+//             (this.innerHTML === 'Показать всё') ? this.innerHTML = 'Скрыть всё' : this.innerHTML = 'Показать всё';
+//     })
+//
+// }
