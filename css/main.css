@@ -48,9 +48,13 @@ body {
 .wrapper {
     /*display: flex;*/
     /*justify-content: space-around;*/
+
     width: 100%;
     /*filter: drop-shadow(0px 2px 2.5px rgba(26,37,26,0.1));*/
     /*background-color: #ffffff;*/
+}
+.btn_box {
+    position: relative;
 }
 
 .box-logo {
@@ -129,6 +133,8 @@ svg {
     background-color: #1e4a1e;
     border: 1px solid #1e4a1e;
 }
+
+
 .btn7 {
     position: fixed;
     top: 20px;

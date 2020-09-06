@@ -27,7 +27,7 @@ function showSlides(n) {
 
  //  ЗАМІНА НАЗВИ КНОПКИ
 const btn = document.querySelector('.btn7 > span');
-btn.addEventListener('click', toggleMenu, true);
+btn.addEventListener  ('click', toggleMenu, true);
 
 function toggleMenu(){
     if (btn.className==='navbar-toggler-icon') {
@@ -46,8 +46,10 @@ window.onscroll = function() {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("nav_toggle").style.top = "0";
+        document.getElementById("btn_box").style.top = "20px";
     } else {
-        document.getElementById("nav_toggle").style.top = "-100px";
+        document.getElementById("nav_toggle").style.top = "-500px";
+        document.getElementById("btn_box").style.top = "-500px";
     }
     prevScrollpos = currentScrollPos;
 };
