@@ -25,20 +25,45 @@ function showSlides(n) {
     dots[slideIndex-1].className += " active";
 }
 
-// $("textarea").resizable();
+ //  ЗАМІНА НАЗВИ КНОПКИ
 const btn = document.querySelector('.btn7 > span');
-btn.addEventListener('click', function() {
+btn.addEventListener('click', toggleMenu, true);
+
+function toggleMenu(){
     if (btn.className==='navbar-toggler-icon') {
         btn.innerHTML = 'X';
-        btn.removeAttribute('class');
+        btn.setAttribute('class','icon_x');
     }
     else {
         btn.setAttribute('class', 'navbar-toggler-icon');
         btn.innerHTML=''
-
     }
-});
+}
 
+//  SCROLL
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.getElementById("nav_toggle").style.top = "0";
+    } else {
+        document.getElementById("nav_toggle").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+};
+
+    // Пробував сам зробити
+// let toggle = document.getElementById('nav_toggle');
+// window.addEventListener('scroll',function () {
+//
+// if (window.scroll === scrollTop ('top')) {
+//     toggle.style.display='none';
+//
+// }
+// else {
+//     toggle.show
+// }
+// });
 
 // const btn = document.querySelector('.btn > span');
 // btn.addEventListener('click', function() {

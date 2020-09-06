@@ -112,6 +112,13 @@ svg {
     /*overflow: hidden;*/
     /*text-overflow: clip;*/
 }
+.icon_x {
+    display: flex;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+}
 
 .icon {
 
@@ -126,6 +133,14 @@ svg {
     position: fixed;
     top: 20px;
     right: 20px;
+}
+#nav_toggle {
+    /*background-color: #333;*/
+    /*position: fixed;*/
+    top: 0;
+    /*width: 100%;*/
+    /*display: block;*/
+    transition: top 0.3s;
 }
 
 @media(max-width: 1126px)  {
@@ -1148,27 +1163,36 @@ h3 {
     filter: drop-shadow(0px 3px 1.5px rgba(167, 117, 1, 0.75));
     background-color: #ffb300;
     border: 1px solid #ffb300;
+
 }
 .menu_footer {
-    margin-top: 30px;
+    margin-top: 25px;
 
 }
 .adr_footer  {
-    margin-top: 30px;
-}
-.form_footer  {
-    margin-top: 30px;
+
+    margin-top: 25px;
 }
 
 /*VISIBILITY*/
 .container_footer li {
     list-style-type: none;
 }
-width: 290px;
-height: 158px;
+
+.form_footer  {
+
 border-radius: 5px;
 filter: drop-shadow(0px 2px 2.5px rgba(17,40,105,0.75));
 background-color: #ffffff;
+    /*margin-top: 30px;*/
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.form_footer  .page-header {
+    text-align: center;
+}
+
 
 a {
     color: #1a251a;
@@ -1227,8 +1251,8 @@ a {
     position: absolute;
     top: 50%;
     width: auto;
-    margin: -80px 0 0 -20px;
-    padding: -10px;
+    margin: -50px 0 0 -20px;
+    /*padding: -10px;*/
     color: #888;
     font-weight: bold;
     font-size: 20px;
@@ -1246,13 +1270,13 @@ a {
 @media (max-width: 768px) {
      .prev  {
       position: absolute;
-      top: 90%;
-      right: -25%;
+      top: 92%;
+      right: -13%;
      }
      .next  {
      position: absolute;
      top: -4%;
-     left: 50%;
+     left: 100%;
      /*margin: -200px 0  0 -60px;*/
     }
 }
@@ -1296,8 +1320,10 @@ a {
     cursor: pointer;
     height: 6px;
     width: 60px;
-    margin: 0 14px;
+    /*margin: 0 14px;*/
     /*margin: 0 -98px 0 102px;*/
+    margin-left: 100px;
+    margin-right: -90px;
     background-color: #687868;;
     border-radius: 3px;
     border: 1px solid #687868;
