@@ -58,12 +58,19 @@ body {
 }
 
 .box-logo {
-    margin-left: 70px;
+    margin-left: 110px;
 
 }
 
 .nav_text {
-margin-left: 60px;
+margin-left: 10px;
+}
+.nav_text > li  {
+  margin-left: 8px;
+}
+
+.nav_text > li :last-child {
+    margin-bottom: 5px;
 }
 
 .box_icon  {
@@ -159,7 +166,7 @@ svg {
         margin: 0;
     }
     .nav_text  {
-       margin-left: -10px;
+       margin-left: 10px;
 
     }
     .box-logo    {
